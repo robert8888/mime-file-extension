@@ -1,0 +1,29 @@
+{
+  "name": "mime-file-extension",
+  "version": "1.0.0",
+  "description": "File extensions for mime type and vice versa",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert8888/mime-file-extension.git"
+  },
+  "keywords": [
+    "MimeType",
+    "FileExtensions",
+    "Mime",
+    "File",
+    "Extensions"
+  ],
+  "author": "robert.kami88@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robert8888/mime-file-extension/issues"
+  },
+  "homepage": "https://github.com/robert8888/mime-file-extension#readme",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
