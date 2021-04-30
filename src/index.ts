@@ -44,7 +44,7 @@ const getMimeType = (extension: string): string =>{
     return type.mime;
 }
 
-export {
+export default{
     getFileExtensions,
     getMimeType
 }
