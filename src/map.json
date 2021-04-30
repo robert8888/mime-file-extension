@@ -338,8 +338,8 @@
 	"application/atom+xml": {
 		"mime": "application/atom+xml",
 		"extensions": [
-			"atom",
-			"xml"
+			"atom, .xml",
+			"atom"
 		],
 		"description": "Atom Syndication Format"
 	},
@@ -1690,6 +1690,20 @@
 		],
 		"description": "HyperText Markup Language (HTML)"
 	},
+	"image/heic": {
+		"mime": "image/heic",
+		"extensions": [
+			"heic"
+		],
+		"description": "High Efficiency Image File Format (HEIF)"
+	},
+	"image/heif": {
+		"mime": "image/heif",
+		"extensions": [
+			"heif"
+		],
+		"description": "High Efficiency Image File Format (HEIF)"
+	},
 	"application/vnd.ibm.rights-management": {
 		"mime": "application/vnd.ibm.rights-management",
 		"extensions": [
@@ -1943,17 +1957,17 @@
 	"image/jpeg": {
 		"mime": "image/jpeg",
 		"extensions": [
+			"jpeg, .jpg",
+			"jpe",
 			"jpeg",
-			"jpg",
-			"jpe"
+			"jpg"
 		],
 		"description": "JPEG Image"
 	},
 	"image/x-citrix-jpeg": {
 		"mime": "image/x-citrix-jpeg",
 		"extensions": [
-			"jpeg",
-			"jpg"
+			"jpeg, .jpg"
 		],
 		"description": "JPEG Image (Citrix client)"
 	},
@@ -2349,7 +2363,7 @@
 			"es3",
 			"et3"
 		],
-		"description": "MICROSEC e-Szign¢"
+		"description": "MICROSEC e-Szign"
 	},
 	"application/x-msaccess": {
 		"mime": "application/x-msaccess",
@@ -2479,7 +2493,7 @@
 		"extensions": [
 			"crd"
 		],
-		"description": "Microsoft Information Card"
+		"description": "Microsoft Information Code"
 	},
 	"application/vnd.ms-lrm": {
 		"mime": "application/vnd.ms-lrm",
@@ -3979,8 +3993,8 @@
 	"application/rss+xml": {
 		"mime": "application/rss+xml",
 		"extensions": [
-			"rss",
-			"xml"
+			"rss, .xml",
+			"rss"
 		],
 		"description": "RSS - Really Simple Syndication"
 	},
@@ -5040,86 +5054,100 @@
 		"mime": "application/ccxml+xml",
 		"extensions": [
 			"ccxml"
-		]
+		],
+		"description": ""
 	},
 	"application/x-gzip": {
 		"mime": "application/x-gzip",
 		"extensions": [
 			"gz",
 			"tgz"
-		]
+		],
+		"description": ""
 	},
 	"text/x-java-source": {
 		"mime": "text/x-java-source",
 		"extensions": [
 			"java"
-		]
+		],
+		"description": ""
 	},
 	"application/x-killustrator": {
 		"mime": "application/x-killustrator",
 		"extensions": [
 			"kil"
-		]
+		],
+		"description": ""
 	},
 	"application/lost+xml": {
 		"mime": "application/lost+xml",
 		"extensions": [
 			"lostxml"
-		]
+		],
+		"description": ""
 	},
 	"application/vnd.fdsn.mseed": {
 		"mime": "application/vnd.fdsn.mseed",
 		"extensions": [
 			"mseed"
-		]
+		],
+		"description": ""
 	},
 	"text/x-python": {
 		"mime": "text/x-python",
 		"extensions": [
 			"py"
-		]
+		],
+		"description": ""
 	},
 	"application/x-python-code": {
 		"mime": "application/x-python-code",
 		"extensions": [
 			"pyc",
 			"pyo"
-		]
+		],
+		"description": ""
 	},
 	"application/x-rpm": {
 		"mime": "application/x-rpm",
 		"extensions": [
 			"rpm"
-		]
+		],
+		"description": ""
 	},
 	"text/vnd.wap.si": {
 		"mime": "text/vnd.wap.si",
 		"extensions": [
 			"si"
-		]
+		],
+		"description": ""
 	},
 	"application/vnd.wap.sic": {
 		"mime": "application/vnd.wap.sic",
 		"extensions": [
 			"sic"
-		]
+		],
+		"description": ""
 	},
 	"text/vnd.wap.sl": {
 		"mime": "text/vnd.wap.sl",
 		"extensions": [
 			"sl"
-		]
+		],
+		"description": ""
 	},
 	"application/vnd.wap.slc": {
 		"mime": "application/vnd.wap.slc",
 		"extensions": [
 			"slc"
-		]
+		],
+		"description": ""
 	},
 	"application/vnd.arastra.swi": {
 		"mime": "application/vnd.arastra.swi",
 		"extensions": [
 			"swi"
-		]
+		],
+		"description": ""
 	}
 }

@@ -1,4 +1,4 @@
-const mfe = require("./index");
+import mfe from "../src/index";
 
 test("Get file extensions", ()=>{
     expect(mfe.getFileExtensions("audio/x-aac")).toEqual(["aac"])
@@ -12,11 +12,10 @@ test("Get file extensions", ()=>{
     expect(mfe.getFileExtensions("audio/webm")).toEqual(["weba"])
     expect(mfe.getFileExtensions("application/postscript")).toEqual(["ai","eps","ps"])
 
-     expect(()=>mfe.getFileExtensions("")).toThrow(/Function.*expect argument/)
-     expect(()=>mfe.getFileExtensions()).toThrow(/Function.*expect argument/)
-     expect(()=>mfe.getFileExtensions("audio")).toThrow(/Not\srecognized\smime\stype/)
-     expect(()=>mfe.getFileExtensions("web")).toThrow(/Not\srecognized\smime\stype/)
-     expect(()=>mfe.getFileExtensions("postscript")).toThrow(/Not\srecognized\smime\stype/)
+    expect(()=>mfe.getFileExtensions("")).toThrow(/Function.*expect argument/)
+    expect(()=>mfe.getFileExtensions("audio")).toThrow(/Not\srecognized\smime\stype/)
+    expect(()=>mfe.getFileExtensions("web")).toThrow(/Not\srecognized\smime\stype/)
+    expect(()=>mfe.getFileExtensions("postscript")).toThrow(/Not\srecognized\smime\stype/)
 })
 
 test("Get mime types", ()=>{ 
@@ -28,12 +27,13 @@ test("Get mime types", ()=>{
     expect(mfe.getMimeType("efif")).toBe("application/vnd.picsel");
     expect(mfe.getMimeType("rip")).toBe("audio/vnd.rip");
     expect(mfe.getMimeType("gif")).toBe("image/gif");
+    expect(mfe.getMimeType("heic")).toBe("image/heic");
+    expect(mfe.getMimeType("heif")).toBe("image/heif");
+    
 
     expect(()=>mfe.getMimeType("")).toThrow("Function get Mime Type expect argument 'extension' (file)")
-    expect(()=>mfe.getMimeType()).toThrow("Function get Mime Type expect argument 'extension' (file)")
 
-    for( ext of ["adfs", "ggg", "zzz", "zz"]){
+    for(const ext of ["adfs", "ggg", "zzz", "zz"]){
         expect(()=>mfe.getMimeType(ext)).toThrow(`Not recognized file extension: '${ext}'`)
     }
-
 })

@@ -27,3 +27,14 @@ console.log(mfe.getMimeType("gif")) // "image/gif"
 console.log(mfe.getMimeType("m2a")) // "audio/mpeg"
 console.log(mfe.getMimeType("m3a")) // "audio/mpeg"
 console.log(mfe.getMimeType(".mp3")) // "audio/mpeg"
+```
+
+## Missing format ? 
+Post your request under [Missing format](https://github.com/robert8888/mime-file-extension/issues/6)
+
+## Changelog
+ * 2.0
+	* move to typescript implementation
+	* adding typescript linting
+	* redefine building types map json - prebuild scripts
+	* adding new mimetypes
