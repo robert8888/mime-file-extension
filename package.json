@@ -1,6 +1,6 @@
 {
   "name": "mime-file-extension",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "File extensions for mime type and vice versa",
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",
@@ -39,5 +39,11 @@
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   },
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.js",
+    "dist/index.js.map",
+    "dist/map.json"
+  ],
   "dependencies": {}
 }
