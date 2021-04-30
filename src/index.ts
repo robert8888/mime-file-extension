@@ -7,7 +7,7 @@ type schemaTypeMap = typeof import("./map.json");
  * @param {Boolean}full - return format with dots on front
  * @returns {String[]} - file extensions
  */
-const getFileExtensions = (mimeType: string, full = false): string[] => {
+export const getFileExtensions = (mimeType: string, full = false): string[] => {
     if(!mimeType){
         throw new Error("Function getFileExtension expect argument 'mimeTypes'")
     }
@@ -25,7 +25,7 @@ const getFileExtensions = (mimeType: string, full = false): string[] => {
     return extensions;
 }
 
-const getMimeType = (extension: string): string =>{
+export const getMimeType = (extension: string): string =>{
     if(!extension){
         throw new Error("Function get Mime Type expect argument 'extension' (file)")
     }
