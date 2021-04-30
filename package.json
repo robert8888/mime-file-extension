@@ -1,13 +1,15 @@
 {
   "name": "mime-file-extension",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "File extensions for mime type and vice versa",
   "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint . --ext .ts",
     "prebuild": "npx ts-node-script src/prebuild.ts",
     "build": "npx tsc",
-    "test": "npm run lint & npm run prebuild & jest"
+    "test": "npm run lint & npm run prebuild & jest",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
