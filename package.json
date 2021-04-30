@@ -2,7 +2,7 @@
   "name": "mime-file-extension",
   "version": "2.0.0",
   "description": "File extensions for mime type and vice versa",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "lint": "eslint . --ext .ts",
     "prebuild": "npx ts-node-script src/prebuild.ts",
